@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6254297855602184059
-    second: Flappy Bird Sprites_0
+    second: OrangePipe
   - first:
       213: -1446630399955053974
-    second: Flappy Bird Sprites_1
+    second: GreenPipe
   - first:
       213: 7639703789202663196
     second: Blue1
@@ -22,7 +22,7 @@ TextureImporter:
     second: Flappy Bird Sprites_5
   - first:
       213: -2004359676323012058
-    second: Flappy Bird Sprites_6
+    second: instruction
   - first:
       213: 5140492561284378634
     second: Blue2
@@ -76,10 +76,10 @@ TextureImporter:
     second: EndGameMenu
   - first:
       213: 3755815422007417192
-    second: Flappy Bird Sprites_24
+    second: Share
   - first:
       213: 4059762669117696758
-    second: Flappy Bird Sprites_25
+    second: GooglePlay
   - first:
       213: -7289325287177181031
     second: Bronze
@@ -94,13 +94,13 @@ TextureImporter:
     second: Pausebtn
   - first:
       213: 7463879149399538272
-    second: Playbtn
+    second: ResumeGame
   - first:
       213: 7665679511463452981
     second: Ground
   - first:
       213: 3802307496682136100
-    second: Flappy Bird Sprites_32
+    second: GoToMenu
   - first:
       213: -6552382079645713034
     second: PlayHome
@@ -207,7 +207,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flappy Bird Sprites_0
+      name: OrangePipe
       rect:
         serializedVersion: 2
         x: 19
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_1
+      name: GreenPipe
       rect:
         serializedVersion: 2
         x: 111
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_6
+      name: instruction
       rect:
         serializedVersion: 2
         x: 667
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_24
+      name: Share
       rect:
         serializedVersion: 2
         x: 214
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_25
+      name: GooglePlay
       rect:
         serializedVersion: 2
         x: 397
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Playbtn
+      name: ResumeGame
       rect:
         serializedVersion: 2
         x: 660
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy Bird Sprites_32
+      name: GoToMenu
       rect:
         serializedVersion: 2
         x: 19

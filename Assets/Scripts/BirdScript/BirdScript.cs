@@ -21,6 +21,14 @@ public class BirdScript : MonoBehaviour
 
     private Button flapButton;
 
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip flapClick, pointClip, diedClip;
+
+    public int score;
+    
+
     void Awake()
     {
         //This will slow our game if we have many getComponet
@@ -32,6 +40,7 @@ public class BirdScript : MonoBehaviour
             instance = this;
         }
         isAlive = true;
+        score = 0;
 
         //get the button component of the FlapButton object
         flapButton = GameObject.FindGameObjectWithTag("FlapButton").GetComponent<Button>();
@@ -57,15 +66,30 @@ public class BirdScript : MonoBehaviour
             Vector3 temp = transform.position;
             temp.x += forwardSpeed * Time.deltaTime;
             transform.position = temp;
-        }
-        //if our bird need to flap
-        if (didFlap)
-        {
-            //the bird flap once every time we touch the screen
-            //if the bird is already flap, we stop
-            didFlap = false;
-            myRigidBody.velocity = new Vector2(0, bounceSpeed);
-            anim.SetTrigger("Flap");
+
+            if (didFlap)
+            {
+                //the bird flap once every time we touch the screen
+                //if the bird is already flap, we stop
+                didFlap = false;
+                myRigidBody.velocity = new Vector2(0, bounceSpeed);
+                audioSource.PlayOneShot(flapClick);
+                anim.SetTrigger("Flap");
+            }
+
+            //Make the bird face downward when it's falling
+            if (myRigidBody.velocity.y >= 0)
+            {
+                //use quaternion for angle
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else
+            {
+                float angle = 0;
+                //create angle: lerp will go from 0 to -90 in the given time
+                angle = Mathf.Lerp(0, -90, -myRigidBody.velocity.y / 10);
+                transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
         }
     }
 
@@ -83,5 +107,28 @@ public class BirdScript : MonoBehaviour
     public void FlapTheBird()
     {
         didFlap = true;
+    }
+
+    //
+    void OnCollisionEnter2D (Collision2D target)
+    {
+        if(target.gameObject.tag=="Ground" || target.gameObject.tag == "Pipe")
+        {
+            if (isAlive)
+            {
+                isAlive = false;
+                anim.SetTrigger("Died");
+                audioSource.PlayOneShot(diedClip);
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D target)
+    {
+         if(target.tag == "PipeHolder")
+        {
+            score++;
+            audioSource.PlayOneShot(pointClip);
+        }
     }
 }

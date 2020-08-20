@@ -109,7 +109,7 @@ public class BirdScript : MonoBehaviour
         didFlap = true;
     }
 
-    //
+    //when our bird collide (died)
     void OnCollisionEnter2D (Collision2D target)
     {
         if(target.gameObject.tag=="Ground" || target.gameObject.tag == "Pipe")
@@ -119,15 +119,18 @@ public class BirdScript : MonoBehaviour
                 isAlive = false;
                 anim.SetTrigger("Died");
                 audioSource.PlayOneShot(diedClip);
+                GamePlayController.instance.PlayerDiedShowScore(score);
             }
         }
     }
 
+    //bird gaining score
     void OnTriggerEnter2D(Collider2D target)
     {
          if(target.tag == "PipeHolder")
         {
             score++;
+            GamePlayController.instance.SetScore(score);
             audioSource.PlayOneShot(pointClip);
         }
     }

@@ -568,9 +568,9 @@ GameObject:
   - component: {fileID: 494973099}
   - component: {fileID: 494973098}
   - component: {fileID: 494973097}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RedBirdMenu
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,8 +630,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -397872849
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4959930989637110683, guid: ae52178b1afe8a845b0cb29b7c520582,
     type: 3}
@@ -914,9 +914,9 @@ GameObject:
   - component: {fileID: 824233501}
   - component: {fileID: 824233500}
   - component: {fileID: 824233499}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BlueBirdMenu
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -976,8 +976,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -397872849
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7639703789202663196, guid: ae52178b1afe8a845b0cb29b7c520582,
     type: 3}
@@ -1776,9 +1776,9 @@ GameObject:
   - component: {fileID: 1891218409}
   - component: {fileID: 1891218408}
   - component: {fileID: 1891218407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GreenBirdMenu
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1838,8 +1838,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -397872849
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1832971715830722056, guid: ae52178b1afe8a845b0cb29b7c520582,
     type: 3}

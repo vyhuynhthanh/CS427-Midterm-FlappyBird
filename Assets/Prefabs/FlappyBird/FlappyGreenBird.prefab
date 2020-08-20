@@ -15,13 +15,13 @@ GameObject:
   - component: {fileID: 1395362309869489183}
   - component: {fileID: 5718435587323863}
   - component: {fileID: 4916367676874443595}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FlappyGreenBird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5935597221401131978
 Transform:
   m_ObjectHideFlags: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -397872849
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1832971715830722056, guid: ae52178b1afe8a845b0cb29b7c520582,
     type: 3}

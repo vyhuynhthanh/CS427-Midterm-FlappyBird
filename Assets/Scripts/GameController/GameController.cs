@@ -50,9 +50,9 @@ public class GameController : MonoBehaviour
         {
             PlayerPrefs.SetInt(HIGH_SCORE, 0);
             //value 0 for locked and 1 for unlocked (like true and false)
-            PlayerPrefs.SetInt(SELECTED_BIRD, 0);
-            PlayerPrefs.SetInt(GREEN_BIRD, 1);
-            PlayerPrefs.SetInt(RED_BIRD, 1);
+            PlayerPrefs.SetInt(SELECTED_BIRD,0);
+            PlayerPrefs.SetInt(GREEN_BIRD, 0);
+            PlayerPrefs.SetInt(RED_BIRD, 0);
             PlayerPrefs.SetInt("GameStartedFirstTime", 1);
         }
     }

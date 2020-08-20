@@ -1493,7 +1493,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457487657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120928283}
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &457487657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2203,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlappyRedBird
       objectReference: {fileID: 0}
+    - target: {fileID: 5660990612753970844, guid: 7acef334bbd167a4f92596b0d14cabf6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660990612753970844, guid: 7acef334bbd167a4f92596b0d14cabf6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660990612753970844, guid: 7acef334bbd167a4f92596b0d14cabf6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660990612753970846, guid: 7acef334bbd167a4f92596b0d14cabf6,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -397872849
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660990612753970846, guid: 7acef334bbd167a4f92596b0d14cabf6,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7acef334bbd167a4f92596b0d14cabf6, type: 3}
 --- !u!1 &749297780 stripped
@@ -2620,7 +2656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &967699738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3855,7 +3891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1368166264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4697,7 +4733,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1527014940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120928283}
+        m_MethodName: GoToMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1527014940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,7 +4869,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1669578046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120928283}
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1669578046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6740,7 +6798,7 @@ PrefabInstance:
     - target: {fileID: 8278595616286580647, guid: 8219ab7f69c2e30428f56b7c306d36be,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8278595616286580666, guid: 8219ab7f69c2e30428f56b7c306d36be,
         type: 3}

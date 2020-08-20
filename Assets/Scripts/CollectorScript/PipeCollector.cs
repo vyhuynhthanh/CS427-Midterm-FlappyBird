@@ -9,8 +9,8 @@ public class PipeCollector : MonoBehaviour
     private float distance = 2f;
     private float lastPipeX;
     //y-axis
-    private float pipeMin = -0.93f;
-    private float pipeMax = 1.1f;
+    private float pipeMin = -0.95f;
+    private float pipeMax = 1f;
 
     void Awake()
     {

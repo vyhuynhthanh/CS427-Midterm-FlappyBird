@@ -117,16 +117,24 @@ public class GamePlayController : MonoBehaviour
         else if (score>20 && score < 40)
         {
             medalImg.sprite = medals[1];
+        }
+        else
+        {
+            medalImg.sprite = medals[2];
+        }
 
+        //Unlock bird
+        if (GameController.instance.GetHighScore()> 20 && GameController.instance.GetHighScore()< 40)
+        {
+            //Debug.Log("unlock green bird");
+            Debug.Log(GameController.instance.GetHighScore());
             if (GameController.instance.GreenBirdUnlocked() == 0)
             {
                 GameController.instance.UnlockGreenBird();
             }
         }
-        else
+        else if(GameController.instance.GetHighScore() > 40)
         {
-            medalImg.sprite = medals[2];
-
             if (GameController.instance.GreenBirdUnlocked() == 0)
             {
                 GameController.instance.UnlockGreenBird();

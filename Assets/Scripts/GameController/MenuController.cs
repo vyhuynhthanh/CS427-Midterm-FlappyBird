@@ -45,6 +45,8 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         SceneFader.instance.FadeIn("GamePlay");
+        //GameController.instance.SetHighScore(0);
+
     }
 
     public void ChangeBird()
@@ -52,8 +54,8 @@ public class MenuController : MonoBehaviour
         //the blue bird is selected
         if (GameController.instance.GetSelectedBird() == 0)
         {
-            //click once and select the green bird
-            if (greenBirdUnlocked)
+            //click once and select the green bir
+            if (GameController.instance.GreenBirdUnlocked() == 1)
             {
                 //de-select the blue bird
                 birds[0].SetActive(false);
@@ -65,14 +67,14 @@ public class MenuController : MonoBehaviour
         //the green bird is currently selected
         else if(GameController.instance.GetSelectedBird() == 1)
         {
-            if (redBirdUnlocked)
+            if (GameController.instance.RedBirdUnlocked() == 1)
             {
                 //deactivating the green bird
                 birds[1].SetActive(false);
                 //activate the red bird
                 GameController.instance.SetSelectedBird(2);
                 birds[GameController.instance.GetSelectedBird()].SetActive(true);
-            } else
+            } else //red bird is not unlocked yet
             {
                 //deactivating the green bird
                 birds[1].SetActive(false);

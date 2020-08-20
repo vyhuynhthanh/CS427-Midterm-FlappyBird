@@ -13,9 +13,10 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Awake");
         MakeSingleton();
         GameStartedFirstTime();
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("GameStartedFirstTime");
     }
 
 
@@ -48,6 +49,9 @@ public class GameController : MonoBehaviour
         //if player pref doesn't contain GameStartedFirstTime keyword: this is the first time
         if (!PlayerPrefs.HasKey("GameStartedFirstTime"))
         {
+
+            Debug.Log("First time");
+      
             PlayerPrefs.SetInt(HIGH_SCORE, 0);
             //value 0 for locked and 1 for unlocked (like true and false)
             PlayerPrefs.SetInt(SELECTED_BIRD,0);

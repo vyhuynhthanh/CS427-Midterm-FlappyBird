@@ -16,7 +16,8 @@ public class GameController : MonoBehaviour
         Debug.Log("Awake");
         MakeSingleton();
         GameStartedFirstTime();
-        PlayerPrefs.DeleteKey("GameStartedFirstTime");
+        //Cmt this command when build
+        //PlayerPrefs.DeleteKey("GameStartedFirstTime");
     }
 
 

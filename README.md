@@ -1,6 +1,6 @@
 # CS427-Midterm-FlappyBird
 
-## Student
+## Team
   1. 1751027 - Huỳnh Thanh Vy
   2. 1751112 - Nguyễn Thị Thanh Trúc
   
@@ -15,6 +15,7 @@
     - Or score the best to beat best score
     
 **Unity version:** 2019.4.1f1
+
 **Resource:**
   1. Sprite: https://www.spriters-resource.com/mobile/flappybird/sheet/59894/
   2. Background music: https://www.youtube.com/watch?v=0SjTHcaqlL8
